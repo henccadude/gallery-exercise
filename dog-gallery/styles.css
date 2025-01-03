@@ -5,9 +5,11 @@
 }
 
 html{
-  font-size: 62.5%
+  font-size: 62.5%;
+  font-family: "Roboto", serif;
 }
 
+/*resualble*/
 .container{
   max-width: 120rem;
   margin: 0 auto;
@@ -19,6 +21,7 @@ html{
   row-gap: 6.2rem;
   column-gap: 6.2rem;
 }
+/*gallery*/
 .gallery{
   margin-top: 3.2rem;
 }
@@ -38,4 +41,29 @@ html{
 }
 .gallery-item img:hover{
   transform: scale(1.1);
+}
+
+/*clock*/
+
+.clock{
+  margin-top: 3.2rem;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.time-holder{
+  display: flex;
+}
+.hours{
+
+}
+.time-divider{
+  font-size: 4.4rem;
+  
+}
+.p-style{
+  font-size: 4.4rem;
+  font-weight: 500;
 }

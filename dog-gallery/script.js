@@ -45,12 +45,20 @@ function menuHandler(gallery){
     picElm.append(picImg);
 
     //show element
-    gallerySection.append(picElm)
-
+    gallerySection.append(picElm);
   });
   
 
-};
+}
+
+function clockHandler(){
+  setInterval(function(){
+    let localTime = new Date();
+    document.querySelector(".hours").textContent = localTime.getHours().toString().padStart(2,"0")
+    document.querySelector(".minutes").textContent = localTime.getMinutes().toString().padStart(2,"0")
+    document.querySelector(".seconds").textContent = localTime.getSeconds().toString().padStart(2,"0")
+  },1000);
+}
 
 /*<div class="gallery-item">
       <img class="img" src="dogpics/dogpic1.jpg" alt="picture">
@@ -72,3 +80,4 @@ function menuHandler(gallery){
 </div>*/
 
 menuHandler(galleryImages);
+clockHandler();
